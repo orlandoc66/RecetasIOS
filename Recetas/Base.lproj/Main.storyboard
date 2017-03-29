@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="tsl-Nk-0bq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Guiso de Cordero-->
+        <scene sceneID="yUG-lL-AsK">
+            <objects>
+                <viewController title="Guiso de Cordero" id="JEX-9P-axG" customClass="DetailViewController" customModule="Recetas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guisado400" translatesAutoresizingMaskIntoConstraints="NO" id="M6b-0b-JJi">
+                                <rect key="frame" x="20" y="89" width="400" height="300"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ou-Rj-Xnp">
+                                <rect key="frame" x="20" y="426" width="571" height="133"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">La carne de cordero es una de nuestras favoritas, es muy sabrosa y jugosa, tan rica simplemente hecha a la plancha (mucho mejor en brasas, por supuesto), como en guisos, arroces, pasteles, nos encantan los canelones o las croquetas que podemos hacer con cordero… pero mejor no seguimos, que ya estamos salivando y tenemos que comentaros que el recopilatorio dominical lo dedicamos a esta exquisita carne. Una receta casera de madre que seguro que si preparáis en casa os vendrán un montón de recuerdos, no hay como un buen guiso para reunir a la familia.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po5-El-Ghn">
+                                <rect key="frame" x="20" y="397" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guiso de " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dA4-dy-Ss7">
+                                <rect key="frame" x="436" y="212" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cordero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-OB-WoP">
+                                <rect key="frame" x="456" y="241" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjC-HH-R9A">
+                                <rect key="frame" x="233" y="562" width="134" height="30"/>
+                                <color key="backgroundColor" red="0.74127998740000001" green="0.25645232080000002" blue="0.1070205236" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jC9-6K-Noq"/>
+                                    <constraint firstAttribute="width" constant="134" id="vUs-ov-5je"/>
+                                </constraints>
+                                <state key="normal" title="Receta &gt;&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YU8-h1-fcj" kind="show" id="reY-6W-7zV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghJ-sL-VUa">
+                                <rect key="frame" x="419" y="89" width="181" height="30"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Galería +"/>
+                                <connections>
+                                    <segue destination="aHL-R9-MwK" kind="popoverPresentation" popoverAnchorView="ghJ-sL-VUa" id="OuX-NA-ApL">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2334105148" green="0.5" blue="0.053161078510000001" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IjC-HH-R9A" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="7ZJ-Mg-cdq"/>
+                            <constraint firstItem="7ou-Rj-Xnp" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="HRL-Tc-L1f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7ou-Rj-Xnp" secondAttribute="trailing" constant="-11" id="dBc-wB-dSD"/>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="IjC-HH-R9A" secondAttribute="bottom" constant="8" id="iN2-4t-dqS"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Guiso de Cordero" id="mOI-FS-AaM">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="VwV-Mp-2OJ"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="889"/>
+        </scene>
+        <!--Galeria Guisos Cordero-->
+        <scene sceneID="TJ0-Hc-RLw">
+            <objects>
+                <viewController title="Galeria Guisos Cordero" id="aHL-R9-MwK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="51q-GF-lfz"/>
+                        <viewControllerLayoutGuide type="bottom" id="gEU-4b-aD3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oHA-iE-YfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRQ-Am-jAy">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guisado2" translatesAutoresizingMaskIntoConstraints="NO" id="qXl-ip-y6t">
+                                        <rect key="frame" x="0.0" y="308" width="300" height="300"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guisado1" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-qv-dCg">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44754635949999999" green="0.90048926770000004" blue="0.079827062030000007" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KRQ-Am-jAy" firstAttribute="centerX" secondItem="oHA-iE-YfQ" secondAttribute="centerX" id="gnj-tK-L57"/>
+                            <constraint firstItem="KRQ-Am-jAy" firstAttribute="centerY" secondItem="oHA-iE-YfQ" secondAttribute="centerY" id="xxL-6s-2Oi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RdF-I3-SuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192" y="903"/>
+        </scene>
+        <!--Pastas al Alfredo-->
+        <scene sceneID="3Wm-tE-Cuo">
+            <objects>
+                <viewController title="Pastas al Alfredo" id="2lV-Qq-2aa" customClass="DetailViewController" customModule="Recetas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aRD-YJ-E8F"/>
+                        <viewControllerLayoutGuide type="bottom" id="qY4-e8-w7y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MVg-Vg-kVr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pasta400" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-xX-eer">
+                                <rect key="frame" x="20" y="80" width="400" height="300"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-Do-fdf">
+                                <rect key="frame" x="20" y="421" width="571" height="167"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Se hizo famosa en el restaurante Alfredo alla Scrofa,  propiedad de Alfredo di Lelio en Roma. Que gran día aquél en el que el maestro Alfredo descubrió esta salsa con las que comenzó a preparar los Fetuccini.Cuenta la leyenda que el restaurante se hizo famoso cuando Mary Pickford y Douglas Fairbanks quedaron enamorados del plato en su luna de miel en 1927. Para expresar su gratitud, regalaron a di Lelio un tenedor y una cuchara de oro con una foto de ambos comiendo en el restaurante, foto que di Lelio colgó en su local. Pickford y Fairbanks cocinaron el plato a sus amigos de Hollywood, que pronto se hizo mundialmente famoso.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5v-tD-BKR">
+                                <rect key="frame" x="20" y="391" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pastas al" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sw4-3q-vZB">
+                                <rect key="frame" x="436" y="200" width="103" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alfredo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="598-4h-3Vp">
+                                <rect key="frame" x="456" y="232" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C3-OU-nAe">
+                                <rect key="frame" x="419" y="80" width="181" height="30"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Galería +"/>
+                                <connections>
+                                    <segue destination="9s2-hb-wvd" kind="popoverPresentation" popoverAnchorView="9C3-OU-nAe" id="RM6-4d-gPj">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-0l-jWK">
+                                <rect key="frame" x="233" y="562" width="134" height="30"/>
+                                <color key="backgroundColor" red="0.74127998740000001" green="0.25645232080000002" blue="0.1070205236" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="fHM-vQ-Ia8"/>
+                                    <constraint firstAttribute="height" constant="30" id="fzt-RH-JBr"/>
+                                </constraints>
+                                <state key="normal" title="Receta &gt;&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gik-hf-f69" kind="show" id="bfz-cX-Kwm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2334105148" green="0.5" blue="0.053161078510000001" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qY4-e8-w7y" firstAttribute="top" secondItem="XpX-0l-jWK" secondAttribute="bottom" constant="8" id="TNp-dY-EvQ"/>
+                            <constraint firstItem="XpX-0l-jWK" firstAttribute="centerX" secondItem="MVg-Vg-kVr" secondAttribute="centerX" id="iIK-y8-h5a"/>
+                            <constraint firstItem="LZb-Do-fdf" firstAttribute="leading" secondItem="MVg-Vg-kVr" secondAttribute="leadingMargin" id="oOA-Up-vsG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LZb-Do-fdf" secondAttribute="trailing" constant="-11" id="vgg-hS-OCh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pastas al Alfredo" id="9lF-YT-Wct">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="XqA-Bw-DI6"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJD-WD-EYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="298"/>
+        </scene>
+        <!--Receta Pastas al Alfredo-->
+        <scene sceneID="6GF-HP-ZPk">
+            <objects>
+                <viewController id="Gik-hf-f69" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kDS-bC-7ec"/>
+                        <viewControllerLayoutGuide type="bottom" id="R2R-aH-kMC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qHV-Fx-uRO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNE-dn-Hi6">
+                                <rect key="frame" x="9" y="291" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8t-A3-8Jn">
+                                <rect key="frame" x="9" y="98" width="571" height="185"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <string key="text">•	500 gr. de espaguetis•	500 ml. de nata para cocinar (crema de leche)•	120 gr. de mantequilla•	120 gr. de queso parmesano en polvo•	Bacón (opcional)•	2 pastillas de Avecrem•	Ajo en polvo•	Sal•	Perejil•	Pimienta negra</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2x-0C-6y3">
+                                <rect key="frame" x="9" y="69" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkM-UR-DSd">
+                                <rect key="frame" x="9" y="320" width="571" height="367"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Lo bueno que tienen las recetas de pasta, como es la receta que os voy a enseñar a hacer, los espaguetis con salsa Alfredo, es que mientras esperamos a que hierva el agua y cueza la pasta, podemos ir haciendo la salsa o el sofrito con la que acompañaremos. En este caso ponemos agua a hervir con sal y 2 pastillas de Avecrem para cocer los espaguetis y al mismo tiempo ponemos una cazuela con la mantequilla a calentar para que se funda. Cuando lo haya hecho, añadimos la nata líquida y comenzamos a remover para mezclar los 2 ingredientes. Notaremos que está cocinada la nata cuando empecemos a notar cierta resistencia al remover. Entonces es el momento de añadir el queso parmesano en polvo, damos unas cuantas vueltas y le añadimos el ajo en polvo y la pimienta negra, seguimos removiendo durante unos segundos, probamos el punto de sal y retiramos del fuego. Entonces añadimos el perejil. No lo he hecho antes porque quiero que la salsa tenga ese colorcito verde que me encanta y si se lo pongo antes, al remover y remover se iba a perder.A estas alturas ya tenemos que tener hecha la pasta para los espaguetis con salsa Alfredo. Confío en que la hayáis dejado cociendo el tiempo recomendado por el fabricante, normalmente suele estar lista en ese tiempo. La escurrimos y reservamos. Ahora tenemos que hacer el bacón con un poco de aceite en una sartén y lo añadimos a los espaguetis. Es el momento de presentar los espaguetis con salsa Alfredo.En un plato ponemos espaguetis con el bacón en el fondo y añadimos la cantidad de salsa que queramos por encima y listo, ya podemos disfrutar de este maravilloso plato de la cocina italiana, espaguetis con salsa Alfredo. </mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2334105148" green="0.5" blue="0.053161078510000001" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="o8t-A3-8Jn" firstAttribute="trailing" secondItem="qHV-Fx-uRO" secondAttribute="trailingMargin" id="46F-zd-l5c"/>
+                            <constraint firstItem="mkM-UR-DSd" firstAttribute="leading" secondItem="qHV-Fx-uRO" secondAttribute="leadingMargin" constant="-11" id="Zhh-ub-Qwo"/>
+                            <constraint firstItem="o8t-A3-8Jn" firstAttribute="leading" secondItem="qHV-Fx-uRO" secondAttribute="leadingMargin" constant="-11" id="joW-ki-gO0"/>
+                            <constraint firstItem="mkM-UR-DSd" firstAttribute="trailing" secondItem="qHV-Fx-uRO" secondAttribute="trailingMargin" id="zFF-1q-hqr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Receta Pastas al Alfredo" id="5BM-1a-JvH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H10-DS-Uqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="1147"/>
+        </scene>
+        <!--Receta Guiso de Cordero-->
+        <scene sceneID="zzD-q2-GyP">
+            <objects>
+                <viewController id="YU8-h1-fcj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3fi-g9-RN1"/>
+                        <viewControllerLayoutGuide type="bottom" id="e4C-4j-1Ky"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ita-Eh-vqw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eze-lv-y9Q">
+                                <rect key="frame" x="14" y="100" width="283" height="163"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <string key="text">•	800 g de pierna de cordero troceada•	1 1/2 cebolla•	2 dientes de ajo•	20 ciruelas pasas•	100 g de almendras peladas•	1 cucharada de sésamo tostado•	1 cucharada de azúcar•	agua</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xab-fZ-3HR">
+                                <rect key="frame" x="305" y="100" width="283" height="163"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <string key="text">•	aceite de oliva virgen extra•	aceite de oliva suave•	sal•	pimienta•	perejil picado•	1 rama de canela•	1 cucharadita de canela en polvo•	unas hebras de azafrán</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7I-la-2eq">
+                                <rect key="frame" x="14" y="308" width="571" height="619"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">1.	El cordero tiene que estar troceado, podemos hacerlo nosotros mismos o le pedimos a nuestro carnicero que nos lo trocee.2.	Los tomates tienen que ir pelados y picados. Os recomendamos que lo hagáis al principio, de esta forma estarán preparados cuando haya que añadirlos. Para conseguir que el tomate quede bien pelado, lo ideal es darle unos cortes en la piel y escaldarlo un par de minutos, así la ésta sale prácticamente sola y no encontraremos restos en la salsa. Pelamos, picamos y reservamos.3.	El primer paso es salpimentar el cordero y dorarlo en una sartén con aceite. Tenemos que marcarlo bien para que se forme la costra.4.	Mientras tanto vamos picando la cebolla y los ajos. No hace falta que los trozos sean muy pequeños.5.	Cuando hayamos terminado de marcar todos los trozos de cordero, colamos el aceite y lo echamos en la olla en la que vamos a cocinar. Al reutilizar el aceite conservamos la sustancia de la carne.6.	En ese aceite doramos la cebolla, a media cocción añadimos los ajos y unos minutos después el tomate que previamente hemos pelado y picado.7.	Cuando ya esté todo dorado y el tomate se haya convertido en salsa, salpimentamos e incorporamos el tomillo y el perejil picado.8.	En el momento en el que todo esté bien pochado añadimos el brandy y el zumo del limón. En vez de brandy podemos añadirle vino blanco, pero el primero aporta un sabor más dulce y aromático a la salsa. Al añadir el brandy o el vino se consigue ablandar la carne además de aromatizarla, y el limón ayuda a suavizar el sabor.9.	Dejamos que la salsa reduzca, introducimos los trozos de cordero y cubrimos con el caldo de carne. Tapamos y dejamos cocinar durante 45 minutos.10.	Cuando haya transcurrido este tiempo incorporamos las zanahorias y las patatas con un tiempo de cocción de 22 minutos más. Por último añadimos los guisantes y dejamos otros 10 minutos.Dejamos que repose y servimos caliente.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChI-vU-c09">
+                                <rect key="frame" x="14" y="71" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-vK-Buh">
+                                <rect key="frame" x="14" y="279" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2334105148" green="0.5" blue="0.053161078510000001" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eze-lv-y9Q" firstAttribute="leading" secondItem="Ita-Eh-vqw" secondAttribute="leadingMargin" constant="-6" id="9EQ-RT-5cl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h7I-la-2eq" secondAttribute="trailing" constant="-5" id="MNX-63-bH1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xab-fZ-3HR" secondAttribute="trailing" constant="-8" id="pCC-mF-arY"/>
+                            <constraint firstItem="h7I-la-2eq" firstAttribute="leading" secondItem="Ita-Eh-vqw" secondAttribute="leadingMargin" constant="-6" id="xq6-ge-pf0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Receta Guiso de Cordero" id="3Y3-Ez-SNn">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="QJS-9F-oxb"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvH-hT-3C2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="1723"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="Nki-YV-4Qg">
+            <objects>
+                <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
+                        <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-330"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="smW-Zh-WAh">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.26853332473555125" green="0.66100457702020199" blue="0.016985495067053536" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="Pz0-xR-ILq">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="1" textLabel="Arm-wq-HPj" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Guiso de Cordero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="2" textLabel="o3s-pW-2dV" style="IBUITableViewCellStyleDefault" id="rdw-sM-bQQ">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdw-sM-bQQ" id="G47-nT-PPj">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Crepe de Fresas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o3s-pW-2dV">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="nOG-cZ-jk1" kind="showDetail" id="jUM-Iv-wzJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="3" textLabel="csl-xf-VZT" style="IBUITableViewCellStyleDefault" id="meo-an-7Ke">
+                                        <rect key="frame" x="0.0" y="152" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="meo-an-7Ke" id="v1T-TR-zbr">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Pastas al Alfredo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="csl-xf-VZT">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="Eqw-dM-m05" kind="showDetail" id="MTb-eB-01T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="4" textLabel="JpG-Mk-8AS" style="IBUITableViewCellStyleDefault" id="MeT-8p-ekJ">
+                                        <rect key="frame" x="0.0" y="196" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MeT-8p-ekJ" id="xUb-JT-Re6">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Bandeja Paisa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JpG-Mk-8AS">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="rda-an-FHC" kind="showDetail" id="2ih-Z1-DBE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
+                            <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NUESTRAS RECETAS" id="Zdf-7t-Un8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="-630"/>
+        </scene>
+        <!--Galeria Crepe de Fresas-->
+        <scene sceneID="w3a-1c-ekb">
+            <objects>
+                <viewController title="Galeria Crepe de Fresas" id="9Kj-Fy-R31" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4K-Vu-sW0"/>
+                        <viewControllerLayoutGuide type="bottom" id="7IM-up-h9A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T9d-Hf-vJv">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rma-4V-Les">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fresa1" translatesAutoresizingMaskIntoConstraints="NO" id="ssm-JM-Fyd">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fresa2" translatesAutoresizingMaskIntoConstraints="NO" id="grn-la-aGe">
+                                        <rect key="frame" x="0.0" y="308" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44754635949999999" green="0.90048926770000004" blue="0.079827062030000007" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rma-4V-Les" firstAttribute="centerX" secondItem="T9d-Hf-vJv" secondAttribute="centerX" id="JUZ-IZ-gqm"/>
+                            <constraint firstItem="Rma-4V-Les" firstAttribute="centerY" secondItem="T9d-Hf-vJv" secondAttribute="centerY" id="eSY-3U-dcY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qsb-iE-Ljt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2872" y="-1364"/>
+        </scene>
+        <!--Crepe de Fresas-->
+        <scene sceneID="WiS-6a-bdb">
+            <objects>
+                <viewController title="Crepe de Fresas" id="mJD-Ba-Ofx" customClass="DetailViewController" customModule="Recetas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nLN-UO-JId"/>
+                        <viewControllerLayoutGuide type="bottom" id="9vj-KY-rlS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VW3-Dq-PE1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2K-c7-Ble">
+                                <rect key="frame" x="419" y="92" width="181" height="30"/>
+                                <color key="backgroundColor" red="0.33971230760413457" green="0.60580413510101017" blue="0.10737047786356821" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Galería +"/>
+                                <connections>
+                                    <segue destination="9Kj-Fy-R31" kind="popoverPresentation" popoverAnchorView="x2K-c7-Ble" id="5OQ-4o-HJx">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fresas400" translatesAutoresizingMaskIntoConstraints="NO" id="VFn-p6-rog">
+                                <rect key="frame" x="20" y="92" width="400" height="300"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-CR-kvh">
+                                <rect key="frame" x="20" y="435" width="571" height="103"/>
+                                <color key="backgroundColor" red="0.33971230760413457" green="0.60580413510101017" blue="0.10737047786356821" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <string key="text">Los crepes son un postre fránces que se están haciendo conocidos en nuestro país, pueden ser salados o dulces y son  fáciles de hacer. Es una buena alternativa para el desayuno o el lonche, si lo tomamos. Esta receta combina el sabor del chocolate con el de las fresas, y resulta una combinación muy sabrosa. Te mostramos a continuación como preparar estos increíbles crepes de chocolate y fresas, una delicia. </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDd-Rg-9Ed">
+                                <rect key="frame" x="20" y="406" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crepe de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ5-tO-yCl">
+                                <rect key="frame" x="448" y="194" width="132" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23U-ZV-mhg">
+                                <rect key="frame" x="233" y="546" width="134" height="30"/>
+                                <color key="backgroundColor" red="0.74127998737373735" green="0.25645232082416086" blue="0.10702052355243449" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cTp-FA-0G4"/>
+                                    <constraint firstAttribute="width" constant="134" id="nBr-OQ-mTW"/>
+                                    <constraint firstAttribute="width" constant="75" id="nPQ-Zl-eBC"/>
+                                </constraints>
+                                <state key="normal" title="Receta &gt;&gt;"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cTp-FA-0G4"/>
+                                        <exclude reference="nPQ-Zl-eBC"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="nw2-PP-rbr" kind="show" id="sxF-gC-xIQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIW-Ew-6Ii">
+                                <rect key="frame" x="468" y="230" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23341051477606306" green="0.5" blue="0.053161078511474225" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9vj-KY-rlS" firstAttribute="top" secondItem="23U-ZV-mhg" secondAttribute="bottom" constant="24" id="CD2-E7-Joh"/>
+                            <constraint firstItem="23U-ZV-mhg" firstAttribute="centerX" secondItem="VW3-Dq-PE1" secondAttribute="centerX" id="Lec-kw-7iD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hBc-CR-kvh" secondAttribute="trailing" constant="-11" id="WDx-9y-ToE"/>
+                            <constraint firstItem="VFn-p6-rog" firstAttribute="top" secondItem="nLN-UO-JId" secondAttribute="bottom" constant="28" id="XEw-Td-RmS"/>
+                            <constraint firstItem="VFn-p6-rog" firstAttribute="leading" secondItem="VW3-Dq-PE1" secondAttribute="leadingMargin" id="yXC-EP-eSJ"/>
+                            <constraint firstItem="hBc-CR-kvh" firstAttribute="leading" secondItem="VW3-Dq-PE1" secondAttribute="leadingMargin" id="zoU-qu-40w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crepe de Fresas" id="tfh-Xd-CXF">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="DHR-Lb-T3Y">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3l-SP-84H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2202" y="-1174"/>
+        </scene>
+        <!--Receta Crepe de Fresas-->
+        <scene sceneID="2aY-FW-677">
+            <objects>
+                <viewController id="nw2-PP-rbr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rbB-5G-f51"/>
+                        <viewControllerLayoutGuide type="bottom" id="JQs-Sn-CFw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2O0-Kc-MsI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptz-7Q-ZMK">
+                                <rect key="frame" x="13" y="103" width="571" height="234"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">PARA LAS CREPES•	1 taza de  Leche Alpina•	1 taza de harina de trigo•	1 ½ cucharadas de Mantequilla Alpina, derretida•	2 huevos Mantequilla Alpina extra para cocinar las crepesPARA EL RELLENO•	4 bananos•	12 fresas•	6 cucharadas de Mantequilla Alpina•	1 ½ cucharadas de azúcar•	1/2 taza deCrema de Leche Alpina•	1/2 taza de Nutella</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjX-CA-hfJ">
+                                <rect key="frame" x="13" y="374" width="571" height="206"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <string key="text">1.	Para preparar las crepes, combina todos los ingredientes en un tazón.2.	Aparte, corta los bananos en rodajas, las fresas en cuartos y saltea ambas frutas en mantequilla Alpina con azúcar, por 3 minutos.3.	Adiciona la Crema de Leche Alpina y cocina un minuto más sin dejar de revolver.4.	Retira del fuego.5.	Unta las crepes con Nutella y rellénalas con la mezcla de bananos y fresas.6.	Cierre las crepes y, si deseas,  acompáñelas con helado de vainilla.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAh-JD-1Pd">
+                                <rect key="frame" x="13" y="74" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-MN-f7e">
+                                <rect key="frame" x="13" y="345" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34863264089811241" green="0.52724510732323226" blue="0.19278555673877748" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptz-7Q-ZMK" secondAttribute="trailing" constant="-4" id="T8J-8z-kgJ"/>
+                            <constraint firstItem="PjX-CA-hfJ" firstAttribute="leading" secondItem="2O0-Kc-MsI" secondAttribute="leadingMargin" constant="-7" id="qF0-RS-C8w"/>
+                            <constraint firstItem="ptz-7Q-ZMK" firstAttribute="leading" secondItem="2O0-Kc-MsI" secondAttribute="leadingMargin" constant="-7" id="w9S-JM-2aY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PjX-CA-hfJ" secondAttribute="trailing" constant="-4" id="xKa-Z7-3ET"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Receta Crepe de Fresas" id="m6O-QP-2ID">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="93m-eu-wOi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofB-X9-Waf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3022" y="-632"/>
+        </scene>
+        <!--Bandeja Paisa-->
+        <scene sceneID="0L4-KN-MsL">
+            <objects>
+                <viewController title="Bandeja Paisa" id="Dhp-VG-L6W" customClass="DetailViewController" customModule="Recetas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WyJ-p5-I7I"/>
+                        <viewControllerLayoutGuide type="bottom" id="m6c-Ug-dUE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WR7-ha-FmA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paisas400" translatesAutoresizingMaskIntoConstraints="NO" id="g67-x2-2m2">
+                                <rect key="frame" x="20" y="88" width="400" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rni-9d-3YJ">
+                                <rect key="frame" x="20" y="397" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bandeja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Om-Dv-kV9">
+                                <rect key="frame" x="436" y="192" width="103" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paisa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shw-AF-RFk">
+                                <rect key="frame" x="456" y="221" width="103" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.40833025299999998" blue="0.13064112629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AR4-EZ-hzh">
+                                <rect key="frame" x="419" y="88" width="181" height="30"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Galería +"/>
+                                <connections>
+                                    <segue destination="gzj-YC-QKc" kind="popoverPresentation" popoverAnchorView="AR4-EZ-hzh" id="Cu7-cq-g6d">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGG-25-Bod">
+                                <rect key="frame" x="233" y="562" width="134" height="30"/>
+                                <color key="backgroundColor" red="0.74127998740000001" green="0.25645232080000002" blue="0.1070205236" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Qh-N6-My1"/>
+                                    <constraint firstAttribute="width" constant="134" id="aDA-cM-Jpw"/>
+                                </constraints>
+                                <state key="normal" title="Receta &gt;&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6ZM-Rh-d4a" kind="show" id="hf8-H4-6Ou"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYJ-yi-Apf">
+                                <rect key="frame" x="20" y="426" width="571" height="150"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <string key="text">La bandeja paisa es el plato más representativo de la región, típico de la cocina antioqueña, correspondiente a los actuales territorios de Antioquia, el Viejo Caldas o Eje Cafetero (Caldas, Quindío y Risaralda), parte del norte del Valle del Cauca y el norte del Tolima, Colombia.Característica fundamental de este plato es su enorme abundancia, tanto en cantidad como en variedad de alimentos, de tal modo que la bandeja paisa completa solo cabe servirla en platos grandes llamados bandejas.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2334105148" green="0.5" blue="0.053161078510000001" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DYJ-yi-Apf" secondAttribute="trailing" constant="-11" id="11Q-yb-BoE"/>
+                            <constraint firstItem="m6c-Ug-dUE" firstAttribute="top" secondItem="bGG-25-Bod" secondAttribute="bottom" constant="8" id="HwQ-8O-zEI"/>
+                            <constraint firstItem="bGG-25-Bod" firstAttribute="centerX" secondItem="WR7-ha-FmA" secondAttribute="centerX" id="ZzP-BE-U8W"/>
+                            <constraint firstItem="DYJ-yi-Apf" firstAttribute="leading" secondItem="WR7-ha-FmA" secondAttribute="leadingMargin" id="nHg-lX-TQq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bandeja Paisa" id="5DE-Yb-Uwn">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="CPU-F0-leY"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrB-S3-2UA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3742" y="221"/>
+        </scene>
+        <!--Galeria Bandeja Paisa-->
+        <scene sceneID="xyD-hK-XS7">
+            <objects>
+                <viewController title="Galeria Bandeja Paisa" id="gzj-YC-QKc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bpw-E9-rk1"/>
+                        <viewControllerLayoutGuide type="bottom" id="f0P-c3-Srp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o9o-jm-7SU">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8O-Uh-W95">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paisa2" translatesAutoresizingMaskIntoConstraints="NO" id="ik1-M3-HFA">
+                                        <rect key="frame" x="0.0" y="308" width="300" height="300"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paisa1" translatesAutoresizingMaskIntoConstraints="NO" id="lIv-Cn-0Ep">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44754635949999999" green="0.90048926770000004" blue="0.079827062030000007" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="r8O-Uh-W95" firstAttribute="centerX" secondItem="o9o-jm-7SU" secondAttribute="centerX" id="5Jr-iV-Tmj"/>
+                            <constraint firstItem="r8O-Uh-W95" firstAttribute="centerY" secondItem="o9o-jm-7SU" secondAttribute="centerY" id="sTY-Sz-MJg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVQ-Md-e6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4546" y="213"/>
+        </scene>
+        <!--Receta Bandeja Paisa-->
+        <scene sceneID="gME-Ud-2ma">
+            <objects>
+                <viewController id="6ZM-Rh-d4a" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oYd-HE-Mg4"/>
+                        <viewControllerLayoutGuide type="bottom" id="kSf-R6-pAp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XpS-fZ-tHi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1y-gb-ZIm">
+                                <rect key="frame" x="15" y="386" width="571" height="284"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Remojar los frijoles en agua hasta cubrirlos la noche anterior a su preparación; cocinarlos en esa misma agua, con la mitad del aceite. Cuando estén blandos, agregarle la sal.Mientras tanto, sofríe la carne molida en aceite a fuego medio alto añadiendo la mitad del hogao y revuélvelo bien. fríe los chicharrones hasta que queden tostados o al punto deseado.Cuando los frijoles estén blandos, añade el guiso restante y cocina entre 5 y 10 minutos adicionales para darles espesor. Luego, en una sartén, coloca aceite para freír los plátanos dulces o los patacones y los huevos fritos.Hogao o guiso: Mézclalo todo y cocínalo en una sartén durante 10 minutosArepas: En un tazón suficientemente grande para amasar, coloca la harina de maíz. Sobre la harina agrega aceite. Añádele sal al agua, viértela y mezcla hasta conseguir una masa consistente. Haz bola de masa en tu mano y aplánala con tus dos manos hasta darle una forma redondita. Luego en una sartén con poco aceite, asa las arepas hasta que se doren ambos lados.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDc-4I-ZYT">
+                                <rect key="frame" x="15" y="115" width="571" height="234"/>
+                                <color key="backgroundColor" red="0.33971230759999999" green="0.60580413509999997" blue="0.1073704779" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">•	3 tazas de frijoles cargamanto o rojos grandes•	2 cucharadas de aceite•	2 lbs de carne molida 1 taza de hogao o guiso•	2 lbs de tocino 6 huevos 6 chorizos 3 aguacates•	1 libra de arroz•	3 Plátanos dulces o tostones (plátanos machos) Arepa•	4 cebollas grandes•	4 tomates (jitomates) Aceite, al gusto•	2 lbs de carne de pulpa molida•	3 tazas de harina de maíz precocida (blanca o amarilla) para arepas•	2 tazas de agua tibia•	Sal al gusto</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSe-JL-drR">
+                                <rect key="frame" x="15" y="86" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBt-27-YMN">
+                                <rect key="frame" x="15" y="357" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2334105148" green="0.5" blue="0.053161078510000001" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FDc-4I-ZYT" firstAttribute="leading" secondItem="XpS-fZ-tHi" secondAttribute="leadingMargin" constant="-5" id="DjR-J3-uOu"/>
+                            <constraint firstItem="Z1y-gb-ZIm" firstAttribute="leading" secondItem="XpS-fZ-tHi" secondAttribute="leadingMargin" constant="-5" id="FGB-sg-b54"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z1y-gb-ZIm" secondAttribute="trailing" constant="-6" id="L5L-WG-NGC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FDc-4I-ZYT" secondAttribute="trailing" constant="-6" id="Vlv-PW-sge"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Receta Bandeja Paisa" id="USL-2H-O3G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xC-TS-eC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3742" y="971"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r7l-gg-dq7">
+            <objects>
+                <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" id="DjV-YW-jjY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="GKi-kA-LjT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="129"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y6V-E6-Aqk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eqw-dM-m05" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="NUu-mC-YaC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2lV-Qq-2aa" kind="relationship" relationship="rootViewController" id="zm0-hl-UhR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d63-D7-6cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="418"/>
+        </scene>
+        <!--Galeria Pastas al Alfredo-->
+        <scene sceneID="l1l-Qq-wKY">
+            <objects>
+                <viewController title="Galeria Pastas al Alfredo" id="9s2-hb-wvd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EK9-gZ-4EH"/>
+                        <viewControllerLayoutGuide type="bottom" id="tpB-7S-xaC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1S4-FU-Ypf">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nyl-m6-6ln">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pasta2" translatesAutoresizingMaskIntoConstraints="NO" id="Hew-cz-Dgi">
+                                        <rect key="frame" x="0.0" y="308" width="300" height="300"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pasta1" translatesAutoresizingMaskIntoConstraints="NO" id="Hyj-dC-GP1">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44754635949999999" green="0.90048926770000004" blue="0.079827062030000007" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nyl-m6-6ln" firstAttribute="centerX" secondItem="1S4-FU-Ypf" secondAttribute="centerX" id="gqR-7l-K8u"/>
+                            <constraint firstItem="nyl-m6-6ln" firstAttribute="centerY" secondItem="1S4-FU-Ypf" secondAttribute="centerY" id="jq4-uZ-r2r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yae-mf-PEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="1147"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nOo-XR-Qw4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rda-an-FHC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="alI-Y1-hiX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dhp-VG-L6W" kind="relationship" relationship="rootViewController" id="In7-X0-RGy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHc-AT-ZaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930" y="221"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GIp-Fb-kdc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nOG-cZ-jk1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="qZm-b7-US8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mJD-Ba-Ofx" kind="relationship" relationship="rootViewController" id="MUl-Hu-Hb1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFH-tr-u2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="-630"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fresa1" width="300" height="300"/>
+        <image name="fresa2" width="300" height="300"/>
+        <image name="fresas400" width="400" height="300"/>
+        <image name="guisado1" width="300" height="300"/>
+        <image name="guisado2" width="300" height="300"/>
+        <image name="guisado400" width="400" height="300"/>
+        <image name="paisa1" width="300" height="300"/>
+        <image name="paisa2" width="300" height="300"/>
+        <image name="paisas400" width="400" height="300"/>
+        <image name="pasta1" width="300" height="300"/>
+        <image name="pasta2" width="300" height="300"/>
+        <image name="pasta400" width="400" height="300"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6S0-TO-JiA"/>
+    </inferredMetricsTieBreakers>
+</document>
